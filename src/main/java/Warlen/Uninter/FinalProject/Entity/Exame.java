@@ -1,7 +1,6 @@
 package Warlen.Uninter.FinalProject.Entity;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
-import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 import lombok.Data;
 
@@ -30,5 +29,4 @@ public class Exame {
     @JoinColumn(name = "profissional_id")
     @JsonBackReference(value = "profissional-exames")
     private ProfissionalDeSaude profissional;
-
 }
